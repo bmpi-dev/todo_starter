@@ -1,0 +1,33 @@
+name: schedule-email
+on: 
+  schedule:
+    # * is a special character in YAML so you have to quote this string
+    - cron:  '0 1 * * *' # Change this to your time
+  push:
+    branches:
+      - master # Change this to your default branch
+jobs:
+  make-html-send-email:
+    name: make-html-send-email
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@master
+    - name: Set up Node.js
+      uses: actions/setup-node@master
+      with:
+        node-version: 10.0.0
+    - run: npm install -g todo-plus-parser
+    - run: todo-plus-parser -i "./" -o "./out.html"
+    - name: send-email
+      uses: bmpi-dev/action-send-mail@master
+      with:
+        server_address: ${{secrets.MAIL_SMTP_SERVER}} # smtp.mxhichina.com/smtp.163.com
+        server_port: 465
+        username: ${{secrets.MAIL_USERNAME}}
+        password: ${{secrets.MAIL_PASSWORD}}
+        subject: TODO++
+        body: file://out.html
+        to: ${{secrets.MAIL_TO}}
+        from: ${{secrets.MAIL_FROM}}
+    

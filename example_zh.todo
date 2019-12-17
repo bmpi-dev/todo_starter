@@ -1,0 +1,31 @@
+TODO++:
+    ✔ VSCode插件 @done(19-12-08 16:48)
+    > https://github.com/bmpi-dev/vscode-todo-plus-plus
+    > Doing + Critical
+    ✔ 邮件通知每日待办事件清单/重要未待办事件清单 @started(19-12-08 16:51) @done(19-12-17 18:40) @lasted(1w2d1h49m3s)
+    > parse/render/api(json)/mailer(golang) + github actions schedule + mailchimp
+    ✘ Telegram Bot查询 @low @cancelled(19-12-08 18:06)
+    ✘ TODO++ App(Flutter/RN) @low @cancelled(19-12-08 18:06)
+    ✘ TODO++ 小程序 @low @cancelled(19-12-08 18:06)
+    ✔ 竞品相关 @done(19-12-17 18:26)
+    > https://github.com/todotxt/todo.txt-cli
+    > https://github.com/todotxt/todo.txt
+    > https://github.com/csauve/todotxt-parser
+    > https://apps.apple.com/cn/app/swiftodo-for-todo-txt/id1073798440
+ 
+bmpi.dev:
+    ✔ 网站评论集成utterances @done(19-11-27 23:52)
+    ✔ 创建Twitter账户 @done(19-12-04 09:32)
+    ✔ Telegram自动转Twitter设置 @done(19-12-04 09:32)
+    ✔ 主题设置和调整 @done(19-12-10 18:00)
+    ☐ 分类内容编写
+    ☐ 写第一篇文章
+    ☐ 嵌入telegram channel(bmpi365)到网站
+    > pipeline定时拉取telegram数据并生成md文档然后push至仓库进而触发netlify自动构建网站
+
+ins:
+    `instaghub.com`:
+        ✔ _ins_账户*手机号*绑定 @手机号验证 @high @critical @today @low @started(19-12-08 16:40) @done(19-12-14 15:27) @lasted(5d22h47m38s)
+
+Archive:
+    ✔ done server restart @done(19-11-27 23:13)
